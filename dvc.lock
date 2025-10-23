@@ -1,0 +1,9 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src\dvc_experiment.py
+    deps:
+    - path: src\dvc_experiment.py
+      hash: md5
+      md5: 5740f979f1409363caca8f7ae4072cc0
+      size: 1074
