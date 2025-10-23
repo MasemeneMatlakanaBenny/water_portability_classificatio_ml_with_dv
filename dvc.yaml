@@ -1,0 +1,13 @@
+plots:
+- dvclive/plots/sklearn/train/conf_mat.json:
+    template: confusion
+    x: actual
+    y: predicted
+    title: Confusion Matrix - train set
+    x_label: True Label
+    y_label: Predicted Label
+stages:
+  train:
+    cmd: python src\dvc_experiment.py
+    deps:
+    - src\dvc_experiment.py
